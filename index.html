@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Consulta endereço por CEP</title>
+     <!--BOOTSTRAP-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css">
+     <!--FONTS GOOGLE-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+     <!--FONTAWESOME-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     
+     <div class="bg-dark container general rounded">
+          <div class="image"><img src="img/map.png" alt="Imagem de mapa" id="imgMap"></div>
+          <h4 class="my-3 text-center py-3 text-white">Consulta de endereço por CEP</h4>
+          <div id="col-sm-6 result">
+               <input class="form-control mb-3" id="cep" maxlength="8" type="text" placeholder="Digite seu CEP">
+               <label class="mb-2 text-white" for="rua">Logradouro</label>
+               <input class="form-control mb-3" type="text" id="rua">
+               <label class="mb-2 text-white" for="bairro">Bairro</label>
+               <input class="form-control mb-3" type="text" id="bairro">
+               <label class="mb-2 text-white" for="complemento">Complemento</label>
+               <input class="form-control mb-3" type="text" id="complemento">
+               <div class="row">
+                    <div class="col-sm-6">
+                         <label class="mb-2 text-white" for="cidade">Cidade</label>
+                         <input class="form-control mb-3" type="text" id="cidade">
+                    </div>
+                    <div class="col-sm-3">
+                         <label class="mb-2 text-white" for="ddd">DDD</label>
+                         <input class="form-control mb-3" type="text" id="ddd">
+                    </div>
+                    <div class="col-sm-3">
+                         <label class="mb-2 text-white" for="estado">Estado</label>
+                         <input class="form-control mb-3" type="text" id="estado">
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="col-sm-4">
+                         <button class="btn btn-block btn-primary mb-3" id="cleanFields"><i class="fa-solid fa-rotate-right"></i> Nova consulta</button>
+                    </div>
+                    <div class="col-sm-4">
+                         <button class="btn btn-block btn-danger mb-3" id="cleanFields"><i class="fa-solid fa-right-from-bracket"></i> Fechar</button>
+                    </div>
+               </div>
+               
+               
+               
+          </div>
+          
+     </div>
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <script src="js/scripts.js"></script>
+</body>
+</html>

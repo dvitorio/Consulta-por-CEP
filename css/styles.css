@@ -1,0 +1,49 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Montserrat', sans-serif;
+}
+
+body{
+     background-color: rgb(16, 14, 14) !important;
+}
+
+.image{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#imgMap{
+     width: 45px;
+     margin-top: 20px;
+}
+
+h4{
+     font-size: 1.25rem !important;
+}
+
+.general{
+     max-width: 600px !important;
+     height: auto;
+}
+
+p{
+     color: white;
+}
+
+#result{
+     display: flex;
+     align-items: flex-start;
+     justify-content: flex-start;
+     flex-direction: column;
+}
+
+#cep{
+     background-color: transparent;
+     border: .2px solid grey !important;
+     color: white;
+     width: 200px !important;
+}
+
+
