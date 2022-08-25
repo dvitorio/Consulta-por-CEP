@@ -26,3 +26,22 @@ function addFields(response){
      cidade.value = response.localidade;
      estado.value = response.uf;
 }
+
+/** CLEAN UP FORM FIELDS (LIMPA OS CAMPOS DO FORMULÁRIO)*/
+const btnCleanFields = document.getElementById("btnCleanFields");
+btnCleanFields.onclick = ()=>{
+     cep.value = "";
+     rua.value = "";
+     bairro.value = "";
+     complemento.value = "";
+     ddd.value = "";
+     cidade.value = "";
+     estado.value = "";
+}
+
+
+/**CLOSE APPLICATION (FECHA A APLICAÇÃO) */
+const btnClose = document.getElementById("btnClose");
+btnClose.onclick = ()=>{
+     window.close();
+};
