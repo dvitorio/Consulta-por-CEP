@@ -19,28 +19,28 @@
 <body>
      
      <div class="bg-dark container general rounded">
-          <div class="image"><img src="img/map.png" alt="Imagem de mapa" id="imgMap"></div>
+          <div class="image mt-5"><img src="img/map.png" alt="Imagem de mapa" id="imgMap"></div>
           <h4 class="my-3 text-center py-3 text-white">Consulta de endereço por CEP</h4>
           <div id="col-sm-6 result">
                <input class="form-control mb-3" id="cep" maxlength="8" type="number" placeholder="Digite seu CEP">
                <label class="mb-2 text-white" for="rua">Logradouro</label>
-               <input class="form-control mb-3" type="text" id="rua">
+               <input class="form-control mb-3" type="text" id="rua" disabled>
                <label class="mb-2 text-white" for="bairro">Bairro</label>
-               <input class="form-control mb-3" type="text" id="bairro">
+               <input class="form-control mb-3" type="text" id="bairro" disabled>
                <label class="mb-2 text-white" for="complemento">Complemento</label>
-               <input class="form-control mb-3" type="text" id="complemento">
+               <input class="form-control mb-3" type="text" id="complemento" disabled>
                <div class="row">
                     <div class="col-sm-6">
                          <label class="mb-2 text-white" for="cidade">Cidade</label>
-                         <input class="form-control mb-3" type="text" id="cidade">
+                         <input class="form-control mb-3" type="text" id="cidade" disabled>
                     </div>
                     <div class="col-sm-3">
                          <label class="mb-2 text-white" for="ddd">DDD</label>
-                         <input class="form-control mb-3" type="text" id="ddd">
+                         <input class="form-control mb-3" type="text" id="ddd" disabled>
                     </div>
                     <div class="col-sm-3">
                          <label class="mb-2 text-white" for="estado">Estado</label>
-                         <input class="form-control mb-3" type="text" id="estado">
+                         <input class="form-control mb-3" type="text" id="estado" disabled>
                     </div>
                </div>
                <div class="row">
@@ -50,10 +50,13 @@
                     <div class="col-sm-4">
                          <button class="btn btn-block btn-danger mb-3" id="btnClose"><i class="fa-solid fa-right-from-bracket"></i> Fechar</button>
                     </div>
-               </div>     
+               </div>  
+               
+               <div class="footer">
+                    <h6 class="mb-3 text-right text-light">Desenvolvido por <a href="https://github.com/dvitorio">Daniel Vitorio</a></h6>
+               </div>
           </div>
 
-          
      </div>
 
 
