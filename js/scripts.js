@@ -41,7 +41,7 @@ btnCleanFields.onclick = ()=>{
 
 
 /**CLOSE APPLICATION (FECHA A APLICAÇÃO) */
-const btnClose = document.getElementById("btnClose");
-btnClose.onclick = ()=>{
+document.getElementById("btnClose").onclick = ()=>{
      window.close();
 };
+
