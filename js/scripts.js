@@ -3,6 +3,7 @@ let rua = document.getElementById("rua");
 let bairro = document.getElementById("bairro");
 let cidade = document.getElementById("cidade");
 let estado = document.getElementById("estado");
+const btnClose = document.getElementById("btnClose");
 
 cep.addEventListener('blur', function(e){
      let cep = e.target.value;
@@ -43,5 +44,6 @@ btnCleanFields.onclick = ()=>{
 /**CLOSE APPLICATION (FECHA A APLICAÇÃO) */
 document.getElementById("btnClose").onclick = ()=>{
      window.close();
+     
 };
 
