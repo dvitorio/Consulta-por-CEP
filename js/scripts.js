@@ -43,6 +43,7 @@ btnCleanFields.onclick = ()=>{
 
 /**CLOSE APPLICATION (FECHA A APLICAÇÃO) */
 document.getElementById("btnClose").onclick = ()=>{
-     window.close('https://danielbuscacep.netlify.app');
+     window.open();
+     window.close();
 };
 
